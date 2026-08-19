@@ -1,6 +1,6 @@
-Name:
-Grade:
-Favorite Programming Language:
-Favorite Thing About Computer Science:
-Something I Am Good At:
-Something I Want To Learn:
+Name: Shourya Bodkhe
+Grade:10th
+Favorite Programming Language: Python
+Favorite Thing About Computer Science: Hands-on coding
+Something I Am Good At: Basic Python programs
+Something I Want To Learn: Complex Java Programming
