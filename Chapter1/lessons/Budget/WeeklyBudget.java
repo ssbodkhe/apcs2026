@@ -1,7 +1,7 @@
 /**
  * Weekly Budget
  * Shourya Bodkhe
- * Last Updated: 8/21/26
+ * Last Updated: 8/24/26
  */
 import java.util.Scanner;
 public class WeeklyBudget
@@ -23,12 +23,24 @@ public class WeeklyBudget
         System.out.print("Enter your weekly allowance: $");
         allowance = scan.nextDouble();
         
-        System.out.print("Entr proce of one school lunch");
+        System.out.print("Enter price of one school lunch: $");
         lunchPrice = scan.nextDouble();
         
         //read an int
-        System.out.print("Enter numer of scool lunches ordered this week");
+        System.out.print("Enter number of school lunches ordered this week: y");
         lunchesPerWeek = scan.nextInt();
+        
+        //perform calculations (Arithemntic expresiions)
+        totalCost = lunchPrice * lunchesPerWeek;
+        remaining = allowance - totalCost;
+        
+        System.out.println(allowance);
+        System.out.println(totalCost);
+        System.out.println(remaining);
+        
+        
+        
+        
         
     }
 }
