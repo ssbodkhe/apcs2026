@@ -31,8 +31,19 @@ public class PrizeGenerator
         
         //gen rand fee between 1-5 dollar
         int fee = 1 + (int)(Math.random() * 5);
+    
+        // int values are autmatically promoted to double
+        // allowed bc no info is lost from int to double
+        double finalBalance = startBalance + prizeAmount - fee;      
         
+        System.out.println("/n Congrats " +name+" Here is your balance");
+        System.out.println("==========================================");
         
-        
+        System.out.printf("%-25s %s%n", "Starting balance", money.format(startBalance));
+        System.out.printf("%-25s %s%n", "prize money", money.format(prizeAmount));
+        System.out.printf("%-25s %s%n", "gratuity", money.format(fee));
+        System.out.printf("---------------------------------------------------");
+        System.out.printf("%-25s %s%n", "final balance", money.format(finalBalance));
+        System.out.println("==========================================");
     }
 }
