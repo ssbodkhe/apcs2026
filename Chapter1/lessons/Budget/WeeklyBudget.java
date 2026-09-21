@@ -1,4 +1,4 @@
-**
+/**
  * Weekly Budget
  * Shourya Bodkhe
  * Last Updated: 8/25/26
@@ -41,7 +41,7 @@ public class WeeklyBudget
         // %n adds new line
         System.out.printf("%n--- Weekly Budget Summary for %s ---%n", name);
         
-        System.out.printf("%-25s %s%n", "Weekly Allowance:", mhy ce));
+        System.out.printf("%-25s %s%n", "Weekly Allowance:");
         System.out.printf("%-25s %s%n", "Total Spent on lunches:", money.format(totalCost));
         System.out.printf("%-25s %s%n", "Money remaining:", money.format(remaining));
         
