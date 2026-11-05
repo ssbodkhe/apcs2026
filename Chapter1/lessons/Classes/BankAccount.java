@@ -39,14 +39,37 @@ public class BankAccount //Step 1: class header
     }
     
     //Withdraw the given amount
-    
-    public boolean withdrawAmount(double amount) {
+    //mutator
+    public boolean withdraw(double amount) {
         if (amount > 0 && balance >= amount) {
-            balance -= amount;
+            this.balance -= amount;
             transactionCount++;
             return true;
         }
         return false;
     }
+    
+    
+    //adds intrerst to the acc balance
+    //mutator
+    public void applyInterest(double annualRate, int months) {
+        double monthlyRate = (annualRate / 100.0) / 12.0;
+        for (int m = 1; m <= months; m++) {
+            this.balance += this.balance * monthlyRate;
+        }
+    }
+    //accessor
+    public double getBalance() {
+        return this.balance;
+    }
+    
+    
+    //the tostringmethod determines what string is printed when a method is called    
+    public String toString() {
+        return "Account: " +this.accountHolder+" | Balance: $"+
+            String.format("%.2f", balance) + " | Transactions: " +
+                this.transactionCount;
+    }
+    
     
 }
